@@ -185,7 +185,7 @@ func main() {
 
 -Output-
 
->![](output/output3.png)
+![](output/output3.png)
 > Program ini dibuat untuk mencetak deret angka berdasarkan aturan sebagai berikut:
 ```go
 func cetakDeret(n int) {
