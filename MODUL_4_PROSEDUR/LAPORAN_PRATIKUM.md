@@ -63,6 +63,7 @@ func main() {
 ```
 
 -Output-
+
 ![](output/output1.png)
 > Program ini saya buat untuk membantu jonas menghitung dengan syarat 𝑎 ≥ 𝑐 dan 𝑏 ≥ 𝑑  jika tidak maka akan menampilkan output "Masukkan angka yang lebih kecil dari angka pertama dan kedua" dan tidak akan menjalankan program lagi.  Karena soal meminta permutasi dan kombinasi tentu kita membutuhkan faktorial, pada program ini membuat faktorial menggunakan looping seperti di bawah ini 
 ```go
@@ -140,6 +141,7 @@ func main() {
 ```
 
 -Output-
+
 ![](output/output2.png)
 > Program menentukan pemenang kompetisi pemrograman berdasarkan jumlah soal yang diselesaikan dan total waktu pengerjaan dengan cara memasukkan nama peserta lalu 8 angka yang menunjukkan waktu pengerjaan setiap soal, jika telah selesai ketik "Selesai" untuk mengakhiri program sekaligus untuk menampilkan output yang telah selesai.
 
@@ -182,6 +184,7 @@ func main() {
 ```
 
 -Output-
+
 >![](output/output3.png)
 > Program ini dibuat untuk mencetak deret angka berdasarkan aturan sebagai berikut:
 ```go
