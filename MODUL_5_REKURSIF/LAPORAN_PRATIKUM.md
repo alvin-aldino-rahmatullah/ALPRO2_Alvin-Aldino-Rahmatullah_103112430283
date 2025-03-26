@@ -190,6 +190,6 @@ func main() {
 }```
 
 -Output-
->![](output/output6_modul5.png)
+>![](output/output5_modul5.png)
 >
 >Program bertugas untuk menghitung perpangkatan x dan y dengan cara mengalikan x dengan dirinya sendiri sebanyak y kali, contoh x sebagai 5 dan y sebagai 3, maka 5 akan dikalikan sebanyak 3 kali. program ini menggunakan **rekursi**, di mana fungsi pangkat(x, y) memanggil dirinya sendiri dengan y-1 hingga mencapai base case, yaitu ketika y == 0.
