@@ -160,7 +160,8 @@ func main() {
 ```
 
 -Output-
->![](output/output5_modul5.png)
+
+![](output/output6_modul5.png)
 >
 >Program ini berguna untuk mencari bilangan ganjil dari 1 sampai n yaitu angka yang di tentukan user, ketika user telah memasukkan angka maka fungsi rekursif akan menjalankan ganjil(n,i) untuk mencetak angka i yang selalu di tambah 2 sampai rentang angka n, jika angka melebihi n maka program akan berhenti dan memunculkan output.
 
@@ -187,9 +188,11 @@ func main() {
   
     hasil := pangkat(x, y)
     fmt.Println(hasil)
-}```
+}
+```
 
 -Output-
-![](output/output1_modul5.png)
+
+![](output/output6_modul5.png)
 >
->Program bertugas untuk menghitung perpangkatan x dan y dengan cara mengalikan x dengan dirinya sendiri sebanyak y kali, contoh x sebagai 5 dan y sebagai 3, maka 5 akan dikalikan sebanyak 3 kali. program ini menggunakan **rekursi**, di mana fungsi pangkat(x, y) memanggil dirinya sendiri dengan y-1 hingga mencapai base case, yaitu ketika y == 0.
+>Program bertugas untuk menghitung perpangkatan x dan y dengan cara mengalikan x dengan dirinya sendiri sebanyak y kali, contoh x sebagai 5 dan y sebagai 3, maka 5 akan dikalikan sebanyak 3 kali. program ini menggunakan rekursi, di mana fungsi pangkat(x, y) memanggil dirinya sendiri dengan y-1 hingga mencapai base case, yaitu ketika y == 0.
