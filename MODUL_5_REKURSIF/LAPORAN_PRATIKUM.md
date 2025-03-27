@@ -161,7 +161,7 @@ func main() {
 
 -Output-
 
-![](output/output6_modul5.png)
+![](output/output5_modul5.png)
 >
 >Program ini berguna untuk mencari bilangan ganjil dari 1 sampai n yaitu angka yang di tentukan user, ketika user telah memasukkan angka maka fungsi rekursif akan menjalankan ganjil(n,i) untuk mencetak angka i yang selalu di tambah 2 sampai rentang angka n, jika angka melebihi n maka program akan berhenti dan memunculkan output.
 
