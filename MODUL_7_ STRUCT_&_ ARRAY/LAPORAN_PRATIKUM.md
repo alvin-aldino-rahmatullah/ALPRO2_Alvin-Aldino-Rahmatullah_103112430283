@@ -3,9 +3,11 @@
 STRUCT & ARRAY</b></h1><p align = center><b>Nama : Alvin Aldino Rahmatullah || NIM : 103112430283</b></p>
 
 <h1>Dasar Teori</h1>
- **Alias (Type)** Bahasa pemrograman pada umumnya mengizinkan pemrograman untuk mengubah nama suatu tipe data dengan nama baru yang lebih ringkas dan familiar. Sebagai contoh "integer" dapat dirubah dengan nama alias "bilangan ". Caranya dengan menggunakan kata kunci "type".
- **Struct atau Record** (Stucture) memungkinkan pemrograman untuk mengelompokkan beberapa data atau nilai yang memiliki relasi atau keterkaitan tertentu menjadi suatu kesatuan. Masing-masing nilai tersimpan dalam field dari stucture tersebut.
- **Array** adalah larik yang berisi kumpulan data dengan tipe serupa. Teknologi ini dapat digunakan untuk mempermudah penghitungan data karena mengelompokkan data-data berdasarkan kesamaannya
+Alias (Type) Bahasa pemrograman pada umumnya mengizinkan pemrograman untuk mengubah nama suatu tipe data dengan nama baru yang lebih ringkas dan familiar. Sebagai contoh "integer" dapat dirubah dengan nama alias "bilangan ". Caranya dengan menggunakan kata kunci "type".
+
+Struct atau Record (Stucture) memungkinkan pemrograman untuk mengelompokkan beberapa data atau nilai yang memiliki relasi atau keterkaitan tertentu menjadi suatu kesatuan. Masing-masing nilai tersimpan dalam field dari stucture tersebut.
+
+Array adalah larik yang berisi kumpulan data dengan tipe serupa. Teknologi ini dapat digunakan untuk mempermudah penghitungan data karena mengelompokkan data-data berdasarkan kesamaannya
 <h1>Unguided </h1>
 
 **Soal 1**
@@ -13,6 +15,7 @@ STRUCT & ARRAY</b></h1><p align = center><b>Nama : Alvin Aldino Rahmatullah || N
 >**Masukan :** terdiri dari beberapa tiga baris. Baris pertama dan kedua adalah koordinat titik pusat dan radius dari lingkaran 1 dan lingkaran 2, sedangkan baris ketiga adalah koordinat titik sembarang. Asumsi sumbu x dan y dari semua titik dan juga radius direpresentasikan dengan bilangan bulat.
 >**Keluaran :** berupa string yang menyatakan posisi titik "Titik di dalam lingkaran 1 dan 2", "Titik di dalam lingkaran 1", "Titik di dalam lingkaran 2", atau "Titik di luar lingkaran 1 dan 2".
 >**Catatan :** Lihat paket math dalam lampiran untuk menggunakan fungsi math.Sqrt() untuk menghitung akar kuadrat.
+>
 >**-Code-**
 ```go
 package main
@@ -63,9 +66,13 @@ func main() {
     }
 }
 ```
+
 > **-Output-**
+> 
 >![](output/output1_modul7.png)
+> 
 >**-Penjelasan Program-**
+> 
 >Program ini akan menampilkan apakah sebuah titik berada di dalam lingkaran 1 atau lingkaran 2 dan berada di dalam atau di luar kedua lingkaran tersebut, tergantung angka yang akan di input oleh user. 
 ```
 import (
@@ -134,7 +141,9 @@ func didalam(t titik, l lingkaran) bool {
 >f. Menampilkan rata-rata dari bilangan yang ada di dalam array. 
 >g. Menampilkan standar deviasi atau simpangan baku dari bilangan yang ada di dalam array tersebut. 
 >h. Menampilkan frekuensi dari suatu bilangan tertentu di dalam array yang telah diisi tersebut.
+>
   **-Code-**
+  
 ```go
 package main
 
@@ -256,9 +265,12 @@ func main() {
     fmt.Println("Frekuensi dari", cari, ":", frekuensi(arr, n, cari))
 }
 ```
->**-Code-**
+>**-Output-**
+>
 >![](output/output2_modul7.png)
+>
 >**-Penjelasan Program-**
+>
 Program di atas digunakan untuk melakukan berbagai operasi terhadap sebuah array bilangan bulat berdasarkan input dari user. Fungsi "isiArray" digunakan untuk mengisi elemen array sebanyak n buah dari input user. Fungsi "cetakArray", "cetakGanjil", dan "cetakGenap" bertugas mencetak isi array secara keseluruhan, hanya elemen dengan indeks ganjil, dan hanya elemen dengan indeks genap. Fungsi "cetakKelipatan" menampilkan elemen array yang memiliki indeks kelipatan x, yang juga dimasukkan oleh pengguna. Fungsi "hapusindeks" digunakan untuk menghapus elemen array pada indeks tertentu dan menggeser elemen-elemen setelahnya agar posisi array tetap teratur. Setelah penghapusan, array dicetak ulang tanpa label "Isi array:" sesuai permintaan. Fungsi "rataRata" menghitung nilai rata-rata dari elemen-elemen dalam array, sedangkan "standarDeviasi" digunakan untuk menghitung seberapa tersebar data dari nilai rata-ratanya menggunakan rumus standar deviasi. Terakhir, fungsi "frekuensi" menghitung seberapa sering suatu bilangan muncul di dalam array. Seluruh fungsi ini dipanggil secara berurutan dalam fungsi "main", sesuai dengan urutan input user.
 
 
@@ -269,8 +281,11 @@ Program di atas digunakan untuk melakukan berbagai operasi terhadap sebuah array
 > Sebuah program digunakan untuk menyimpan dan menampilkan nama-nama klub yang memenangkan pertandingan bola pada suatu grup pertandingan. Buatlah program yang digunakan untuk merekap skor pertandingan bola 2 buah klub bola yang berlaga. Pertama-tama program meminta masukan nama-nama klub yang bertanding, kemudian program meminta masukan skor hasil pertandingan kedua klub tersebut. Yang disimpan dalam array adalah nama-nama klub yang menang saja. Proses input skor berhenti ketika skor salah satu atau kedua klub tidak valid (negatif). Di akhir program, tampilkan daftar klub yang memenangkan pertandingan.
 > 
 >**Perhatikan sesi interaksi pada contoh berikut ini (teks bergaris bawah adalah input/read)**
+> 
 >![](output/soal3_modul7.png)
+> 
 >**-Code-**
+> 
 ```go
 package main
 
@@ -323,8 +338,11 @@ func main() {
 }
 ```
 >**-Output-**
+>
 >![](output/output3_modul7.png)
+>
 >**-Penjelasan Program-**
+>
 >Program akan menampilkan nama klub sepak bola yang menang atau draw dalam beberapa pertandingan, program akan berhenti jika user memasukkan angka yang tidak valid dalam skor seperti bilangan negatif 
 ```
  type Klub struct {
@@ -387,13 +405,21 @@ for i := 0; i < len(klubA.skor); i++ {
 
 > **Soal 4**
 > Sebuah array digunakan untuk menampung sekumpulan karakter, Anda diminta untuk membuat sebuah subprogram untuk melakukan membalikkan urutan isi array dan memeriksa apakah membentuk palindrom. Lengkapi potongan algoritma berikut ini!
+> 
 > ![](output/soal4-1_modul7.png)
+> 
 > Perhatikan sesi interaksi pada contoh berikut ini (teks bergaris bawah adalah input/read)
+> 
 > ![](output/soal4-2_modul7.png)
+> 
 > Modifikasi program tersebut dengan menambahkan fungsi palindrom. Tambahkan instruksi untuk memanggil fungsi tersebut dan menampilkan hasilnya pada program utama. Palindrom adalah teks yang dibaca dari awal atau akhir adalah sama, contoh: KATAK, APA, KASUR_RUSAK.
+> 
 > ![](output/soal4-3_modul7.png)
+> 
 > Perhatikan sesi interaksi pada contoh berikut ini (teks bergaris bawah adalah input/read)
+> 
 > ![](output/soal4-4_modul7.png)
+> 
 >**-Code-**
 ```go
 package main
@@ -455,9 +481,13 @@ func main() {
 
 }
 ```
+
 >**-Output-**
+>
 >![](output/output4_modul7.png)
+>
 >**-Penjelasan Program-**
+>
 > Program ini membuat sebuah kata yang dapat menghasilkan kata yang sama jika di balik, hal ini dinamakan palindrom dan pada pembuatan program ini telah di berikan pseudocode jadi saya perlu implementasikan nya ke dalam sebuah program.
 ```
 const NMAX int = 127
