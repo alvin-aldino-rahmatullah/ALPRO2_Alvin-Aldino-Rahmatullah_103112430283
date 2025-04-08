@@ -4,7 +4,9 @@ STRUCT & ARRAY</b></h1><p align = center><b>Nama : Alvin Aldino Rahmatullah || N
 
 <h1>Dasar Teori</h1>
 -- Alias (Type) Bahasa pemrograman pada umumnya mengizinkan pemrograman untuk mengubah nama suatu tipe data dengan nama baru yang lebih ringkas dan familiar. Sebagai contoh "integer" dapat dirubah dengan nama alias "bilangan ". Caranya dengan menggunakan kata kunci "type".
+
 -- Struct atau Record (Stucture) memungkinkan pemrograman untuk mengelompokkan beberapa data atau nilai yang memiliki relasi atau keterkaitan tertentu menjadi suatu kesatuan. Masing-masing nilai tersimpan dalam field dari stucture tersebut.
+
 -- Array adalah larik yang berisi kumpulan data dengan tipe serupa. Teknologi ini dapat digunakan untuk mempermudah penghitungan data karena mengelompokkan data-data berdasarkan kesamaannya
 <h1>Unguided </h1>
 
