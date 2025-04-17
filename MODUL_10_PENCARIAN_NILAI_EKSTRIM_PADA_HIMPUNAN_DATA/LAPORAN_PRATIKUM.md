@@ -4,6 +4,7 @@ PENCARIAN NILAI EKSTRIM PADA HIMPUNAN DATA </b></h1><p align = center><b>Nama : 
 <h1>Dasar Teori</h1>
 Pencarian adalah suatu proses yang lazim dilakukan di dalam kehidupan sehari-hari. Contoh penggunaannya dalam kehidupan nyata sangat beragam, misalnya pencarian file di dalam directory komputer, pencarian suatu teks di dalam sebuah dokumen, pencarian buku pada rak buku, dan contoh lainnya. Pertama pada modul ini akan dipelajari salah satu algoritma pencarian nilai terkecil atau terbesar pada sekumpulan data, atau biasa disebut pencarian nilai ekstrim.
 Ide algoritma sederhana sekali. Karena data harus diproses secara sekuensial, maka nilai atau indeks ke nilai maksimum dari data yang telah diproses disimpan untuk dibandingkan dengan data berikutnya. Nilai yang berhasil disimpan sampai algoritma tersebut berakhir adalah nilai maksimum yang dicari. Adapun algoritmanya secara umum adalah sebagai berikut:
+
 1)  Jadikan data pertama sebagai nilai ekstrim
 
 2)  Lakukan validasi nilai ekstrim dari data kedua hingga data terakhir.
