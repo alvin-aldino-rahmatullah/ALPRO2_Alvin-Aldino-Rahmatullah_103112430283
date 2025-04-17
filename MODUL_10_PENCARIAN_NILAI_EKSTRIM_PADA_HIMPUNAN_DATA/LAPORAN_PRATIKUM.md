@@ -16,6 +16,7 @@ Ide algoritma sederhana sekali. Karena data harus diproses secara sekuensial, ma
 >**Masukan :** terdiri dari sekumpulan bilangan, yang mana bilangan pertama adalah bilangan bulat N yang menyatakan banyaknya anak kelinci yang akan ditimbang beratnya. Selanjutnya N bilangan riil berikutnya adalah berat dari anak kelinci yang akan dijual.
 >**Keluaran :** terdiri dari dua buah bilangan riil yang menyatakan berat kelinci terkecil dan terbesar.
 >**-Code-**
+
 ```go
 package main
 import "fmt"
@@ -79,6 +80,7 @@ func main() {
 >Sebuah program digunakan untuk menentukan tarif ikan yang akan dijual ke pasar. Program ini menggunakan array dengan kapasitas 1000 untuk menampung data berat ikan yang akan dijual.
 >**Masukan :** terdiri dari dua baris, yang mana baris pertama terdiri dari dua bilangan bulat x dan y. Bilangan x menyatakan banyaknya ikan yang akan dijual, sedangkan y adalah banyaknya ikan yang akan dimasukan ke dalam wadah. Baris kedua terdiri dari sejumlah x bilangan riil yang menyatakan banyaknya ikan yang akan dijual.
 >**Keluaran :** terdiri dari dua baris. Baris pertama adalah kumpulan bilangan riil yang menyatakan total berat ikan di setiap wadah (jumlah wadah tergantung pada nilai x dan y, urutan ikan yang dimasukan ke dalam wadah sesuai urutan pada masukan baris ke-2). Baris kedua adalah sebuah bilangan riil yang menyatakan berat rata-rata ikan di setiap wadah.
+>
 >**-Code-**
 ```go
 package main
@@ -146,7 +148,7 @@ func main() {
 >
 > **-Output-**
 > 
->![](output2_modul10.png)
+>![](output/output2_modul10.png)
  > 
 >**-Penjelasan Program-**
 >Program ini akan memasukkan data berat ikan yang akan dijual, setelah memasukkan jumlah ikan (x) dan jumlah ikan perwadah (y) user akan memasukkan berat ikan satu per satu yang nantinya akakn di proses untuk menghitung total berat ikan pada setiap wadah Program akan membagi ikan ke dalam beberapa wadah dengan isi tetap sebanyak ikan per wadah, lalu menghitung jumlah berat dalam tiap wadah. Setelah semua wadah terisi, program juga akan menghitung rata-rata total berat dari seluruh wadah. Jika jumlah ikan yang dimasukkan melebihi 1000, maka program akan menolak input dengan menampilkan "Jumlah ikan terlalu banyak, maksimal hanya 1000.". Selain itu, program juga memverifikasi bahwa jumlah ikan harus dapat dibagi rata ke dalam wadah, jika tidak proses tidak dilanjutkan. Hasil akhirnya berupa berat ikan dalam 1 wadah dan rata ratanya juga.
@@ -160,11 +162,11 @@ func main() {
 >Pos Pelayanan Terpadu (posyandu) sebagai tempat pelayanan kesehatan perlu mencatat data berat balita (dalam kg). Petugas akan memasukkan data tersebut ke dalam array. Dari data yang diperoleh akan dicari berat balita terkecil, terbesar, dan reratanya.
 >Buatlah program dengan spesifikasi subprogram sebagai berikut:
 >
->![](soal3-1_modul10.png)
+>![](output/soal3-1_modul10.png)
 >
 >Perhatikan sesi interaksi pada contoh berikut ini (teks bergaris bawah adalah input/read)
 >
->![](soal3-2_modul10.png)
+>![](output/soal3-2_modul10.png)
 >
 >**-Code-**
 ```go
@@ -225,7 +227,7 @@ func main() {
 >
 > **-Output-**
 > 
-> ![](output3_modul10.png)
+>![](output/output3_modul10.png)
 > 
 >**-Penjelasan Program-**
 > Program sangat berguna bagi petugas posyandu karena dapat mengelola data berat badan balita. User diminta memasukkan jumlah data berat balita yang maximalnya berjumlah 100 data, lalu memasukkan berat balita sesuai banyak jumlah data yang dimasukkan di awal dan setalah selesai program akan menampilkan output minimum, maximum, dan rata rata dalam bentuk kg. Namun jika user mencoba untuk memasukkan data melebihi kapasitas yang di berikan yaitu "MAX" yang berada di dalam array, program akan menampilkan output yang berbeda yaitu "Jumlah data terlalu banyak, maksimal hanya 100 data."
