@@ -158,7 +158,7 @@ func main() {
  > 
 >**-Penjelasan Program-**
 >
->Program ini akan memasukkan data berat ikan yang akan dijual, setelah memasukkan jumlah ikan (x) dan jumlah ikan perwadah (y) user akan memasukkan berat ikan satu per satu yang nantinya akakn di proses untuk menghitung total berat ikan pada setiap wadah Program akan membagi ikan ke dalam beberapa wadah dengan isi tetap sebanyak ikan per wadah, lalu menghitung jumlah berat dalam tiap wadah. Setelah semua wadah terisi, program juga akan menghitung rata-rata total berat dari seluruh wadah. Jika jumlah ikan yang dimasukkan melebihi 1000, maka program akan menolak input dengan menampilkan "Jumlah ikan terlalu banyak, maksimal hanya 1000.". Selain itu, program juga memverifikasi bahwa jumlah ikan harus dapat dibagi rata ke dalam wadah, jika tidak proses tidak dilanjutkan. Hasil akhirnya berupa berat ikan dalam 1 wadah dan rata ratanya juga.
+>Program ini akan memasukkan data berat ikan yang akan dijual, setelah memasukkan jumlah ikan (x) dan jumlah ikan perwadah (y) user akan memasukkan berat ikan satu per satu yang nantinya akakn di proses untuk menghitung total berat ikan pada setiap wadah. Program akan membagi ikan ke dalam beberapa wadah dengan isi tetap sebanyak ikan per wadah, lalu menghitung jumlah berat dalam tiap wadah. Setelah semua wadah terisi, program juga akan menghitung rata-rata total berat dari seluruh wadah. Jika jumlah ikan yang dimasukkan melebihi 1000, maka program akan menolak input dengan menampilkan "Jumlah ikan terlalu banyak, maksimal hanya 1000.". Selain itu, program juga memverifikasi bahwa jumlah ikan harus dapat dibagi rata ke dalam wadah, jika tidak proses tidak dilanjutkan. Hasil akhirnya berupa berat ikan dalam 1 wadah dan rata ratanya juga.
 
 
 
