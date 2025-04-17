@@ -66,7 +66,7 @@ func main() {
 >
 > **-Output-**
 > 
-> >![](output/output1_modul10.png)
+>![](output/output1_modul10.png)
 > 
 >**-Penjelasan Program-**
 > Program digunakan untuk mencatat dan berat dari anak kelinci tapi di awal program akan meminta berapa jumlah data kelinci yang akan di masukkan karena data tersebut di batasi sampai 1000, namun jika melebihi, maka program akan mempilkan print yang menyatakan bahwa nilai terlalu banyak. Sebenarnya bisa tanpa pakai if karena di awal telah menyatakan array hanya berisi 1000 data namun output yang ditampilkan akan berbeda yaitu "panic: runtime error: index out of range [1000] with length 1000" dan program nya juga berjalan berbeda, jika memakai memakai if program akan terhenti di awal sedangkan tidak memakai if array akan terus jalan namun di saat sampai mengisi data ke 1001 maka program baru berhenti dan akan menampilkan output lain. Setelah program menerima input data yang benar dari user, program akan menghitung berat terkecil dan terbesar dari semua data lalu akan dibandingkan. Data disimpan dalam array bertipe "kelinci" yang hanya dapat menampung maksimal 1000 data bertipe float32. . Fungsi "hitungMinMax" akan menerima array dan jumlah data sebagai parameter, lalu mengembalikan nilai minimum dan maksimum. Hasil akhir berupa berat kelinci terkecil dan terbesar.
@@ -146,7 +146,7 @@ func main() {
 >
 > **-Output-**
 > 
- > >![](output2_modul10.png)
+>![](output2_modul10.png)
  > 
 >**-Penjelasan Program-**
 >Program ini akan memasukkan data berat ikan yang akan dijual, setelah memasukkan jumlah ikan (x) dan jumlah ikan perwadah (y) user akan memasukkan berat ikan satu per satu yang nantinya akakn di proses untuk menghitung total berat ikan pada setiap wadah Program akan membagi ikan ke dalam beberapa wadah dengan isi tetap sebanyak ikan per wadah, lalu menghitung jumlah berat dalam tiap wadah. Setelah semua wadah terisi, program juga akan menghitung rata-rata total berat dari seluruh wadah. Jika jumlah ikan yang dimasukkan melebihi 1000, maka program akan menolak input dengan menampilkan "Jumlah ikan terlalu banyak, maksimal hanya 1000.". Selain itu, program juga memverifikasi bahwa jumlah ikan harus dapat dibagi rata ke dalam wadah, jika tidak proses tidak dilanjutkan. Hasil akhirnya berupa berat ikan dalam 1 wadah dan rata ratanya juga.
