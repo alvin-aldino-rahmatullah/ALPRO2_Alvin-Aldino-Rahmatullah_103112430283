@@ -4,9 +4,14 @@ PENCARIAN NILAI ACAK PADA HIMPUNAN DATA </b></h1><p align = center><b>Nama : Alv
 <h1>Dasar Teori</h1>
 Pencarian secara sekuensial ini adalah pencarian yang dilakukan dari data pertama, kedua hingga terakhir secara satu persatu dan berurutan. Ciri khas dari pencarian ini adalah proses pencarian akan berhenti ketika data yang dicari ditemukan, walaupun masih terdapat data yang belum dicek nilainya. Algoritma ini dikenal dengan nama Sequential Search, karena prosesnya melakukan pengecekan setiap elemen array secara satu persatu dan sekuensial dari data pertama hingga ditemukan atau data terakhir.
 Binary Search adalah: (dengan asumsi data terurut dari kecil membesar (ascending), dan data dengan indeks kecil ada di "kiri" dan indeks besar ada di "kanan") 
-1) Ambil salah satu data dalam rentang data yang ada, algoritma di bawah menggunakan rentang dari kiri 𝒌𝒓 s.d. kanan 𝒌𝒏. Untuk kemudahan dan alasan lainnya, biasanya yang diambil adalah paling tengah dalam rentang tersebut. 
-2) Jika data terambil tersebut terlalu kecil, maka ubah/geser rentang data ke sebelah kanan posisi data tersebut. Ini karena jika data terambil terlalu kecil, maka semua data sebalah kirinya juga akan terlalu kecil dari yang ingin dicari. 
+
+1) Ambil salah satu data dalam rentang data yang ada, algoritma di bawah menggunakan rentang dari kiri 𝒌𝒓 s.d. kanan 𝒌𝒏. Untuk kemudahan dan alasan lainnya, biasanya yang diambil adalah paling tengah dalam rentang tersebut.
+   
+2) Jika data terambil tersebut terlalu kecil, maka ubah/geser rentang data ke sebelah kanan posisi data tersebut. Ini karena jika data terambil terlalu kecil, maka semua data sebalah kirinya juga akan terlalu kecil dari yang ingin dicari.
+  
 3) Begitu juga sebaliknya jika data terambil terlalu besar.
+
+   
 <h1>Guided </h1>
 
 **Soal 1**
