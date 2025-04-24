@@ -8,9 +8,12 @@ Binary Search adalah: (dengan asumsi data terurut dari kecil membesar (ascending
 2) Jika data terambil tersebut terlalu kecil, maka ubah/geser rentang data ke sebelah kanan posisi data tersebut. Ini karena jika data terambil terlalu kecil, maka semua data sebalah kirinya juga akan terlalu kecil dari yang ingin dicari. 
 3) Begitu juga sebaliknya jika data terambil terlalu besar.
 <h1>Guided </h1>
+
 **Soal 1**
 > Sebuah toko memiliki daftar nama barang sebanyak n buah. Setiap nama barang disimpan dalam array bertipe string.Buatlah program untuk mencari apakah nama barang yang dicari (x) tersedia ditoko atau tidak. Pencarian dilakukan menggunakan algoritma sequanbtial search. Program mengembalikan true jika barang ditemukan, atau false jikat tidak ditemukan.
+> 
 >**-Code-**
+> 
 ```go
 package main
 import "fmt"
@@ -48,9 +51,13 @@ func main() {
     }
 }
 ```
+
 >**-Output-**
+>
 >  ![](output/output1_gmodul11.png)
+>
 >**-Penjelasan Program-**
+>
 >Program ini berguna untuk mencari barang barang dalam sebuah daftar data barang. Awalnya program akan meminta user untuk memasukkan jumlah barang yang akan nantinya dimasukkan, lalu user harus memasukkan nama nama barang sebanyak data yang dimasukkan yang nantinya akan disimpan ke dalam array yang bertipe string. Setelah semua nama barang dimasukkan, user dapat mencari kembali nama nama yang dimasukkan, namun jika user memasukkan nama yang  tidak ada dalam array maka program akan mengeluarkan "Barang tidak ditemukan.", namun jika barang ada maka mengeluarkan "Barang ditemukan di toko."
 
 
@@ -58,8 +65,11 @@ func main() {
 
 
 **Soal 2**
+
 >buat program untuk membaca sebuah kalimat (string) dan sebuah karakter yang ingin dicari gunakan sequantial search untuk mencari apakah karakter tersebut terdapat di dalam kalimat. jika ya  tampilakan semua posisi indeks katerakter tersebut di kalimat.
+>
 >**-Code-**
+>
 ```go
 package main
 import "fmt"
@@ -99,9 +109,13 @@ func main() {
     }
 }
 ```
+
 >**-Output-**
+>
 >![](output/output2_gmodul11.png)
+>
 >**-Penjelasan Program-**
+>
 >Program akan meminta user memasukkan sebuah kalimat bebas apa saja dan sebuah karakter. Setelah dimasukkakn user maka program akan memanggil "func seqSearch" yang bertugas untuk mencari apakah ada karakter di dalam sebuah kalimat tersebut. Jika karakter yang dicari ditemukan pada posisi ke "i", maka indeks ini akan disimpan dalam "posisi". Setelah pencarian selesai maka program akan menampilkan output  posisi karakter tersebut, tapi jika tidak maka program akan mengeluarkan "Karakter tidak ditemukan."
 
 
@@ -109,8 +123,11 @@ func main() {
 
 
 **Soal 3**
+
 > Diketahui array mahasiswa terdiri atas n data bertipa struct yang menyimpan data nama dan nim mahasiswa. Array sudah terurut membesar berdasarkan nim. buatlah program untuk mencari nim tertentu menggunakan algoritma binary search dan mengembalikan indeks dari nim tersebut
+> 
 >**-Code-**
+> 
 ```go
 package main
 import "fmt"
@@ -167,9 +184,13 @@ func main() {
     }
 }
 ```
+
 >**-Output-**
+>
 >![](output/output3_gmodul11.png)
+>
 >**-Penjelasan Program-**
+>
 > Program meminta  nim dan nama mahasiswa yang akan dimasukkan dimasukan kedalam array yang bertipe struct mahasiswa, setelah itu user akan diminta memasukkan nim yang ingin dicari. Fungsi "Bmahasiswa" melakukan pencarian biner terhadap elemen "nim" dalam array "arr", dengan menentukan batas kiri (kr)dan kanan (kn) dari indeks array. Pada setiap langkah, indeks tengah (mid) dihitung, lalu dibandingkan dengan x. Jika x lebih kecil pencarian digeser ke kiri, jika lebih besar ke kanan. jika pencarian selesai tanpa menemukan nim.
 
 
@@ -179,10 +200,13 @@ func main() {
 <h1>Unguided </h1>
 
 **Soal 1**
+
 > Pada pemilihan ketua RT yang baru saja berlangsung, terdapat 20 calon ketua yang bertanding memperebutkan suara warga. Perhitungan suara dapat segera dilakukan karena warga cukup mengisi formulir dengan nomor dari calon ketua RT yang dipilihnya. Seperti biasa, selalu ada pengisian yang tidak tepat atau dengan nomor pilihan di luar yang tersedia, sehingga data juga harus divalidasi. Tugas Anda untuk membuat program mencari siapa yang memenangkan pemilihan ketua RT.
 > **Masukan :** hanya satu baris data saja, berisi bilangan bulat valid yang kadang tersisipi dengan data tidak valid. Data valid adalah integer dengan nilai di antara 1 s.d. 20 (inklusif). Data berakhir jika ditemukan sebuah bilangan dengan nilai 0.
 > **Keluaran :** dimulai dengan baris berisi jumlah data suara yang terbaca, diikuti baris yang berisi berapa banyak suara yang valid. Kemudian sejumlah baris yang mencetak data para calon apa saja yang mendapatkan suara.
+> 
 > **-Code-**
+> 
 ```go
 package main
 import "fmt"
@@ -232,8 +256,11 @@ func main() {
 }
 ```
 >**-Output-**
+>
 >![](output/output1_umodul11.png)
+>
 >**-Penjelasan Program-**
+>
 >Program akan meminta user untuk memasukkan suara calon ketua RT secara satu per satu tapi jika sudah dirasa selesai harus di akhiri angka 0 untuk menghentikan program. Setiap suara akan di cek dengan aturan suara yang sah adalah suara yang dimulai dari 1 sampai 20, jika valid maka program akan memanggil "func sequentialSearch" untuk mengecek apakah nomor calon tersebut sudah ada dalam daftar. Jika sudah ada maka jumlah suaranya ditambah, jika belum maka calon tersebut ditambahkan ke dalam daftar dengan suara awal 1. Setelah semua suara diproses, program mengeluarkan total suara masuk, suara sah, dan  jumlah rincian suara yang diterima masing-masing calon.
 
 
@@ -241,10 +268,13 @@ func main() {
 
 
 **Soal 2**
+
 > Berdasarkan program sebelumnya, buat program pilkart yang mencari siapa pemenang pemilihan ketua RT. Sekaligus juga ditentukan bahwa wakil ketua RT adalah calon yang mendapatkan suara terbanyak kedua. Jika beberapa calon mendapatkan suara terbanyak yang sama, ketua terpilih adalah dengan nomor peserta yang paling kecil dan wakilnya dengan nomor peserta terkecil berikutnya.
 > **Masukan :** hanya satu baris data saja, berisi bilangan bulat valid yang kadang tersisipi dengan data tidak valid. Data valid adalah bilangan bulat dengan nilai di antara 1 s.d. 20 (inklusif). Data berakhir jika ditemukan sebuah bilangan dengan nilai 0.
 > **Keluaran :** dimulai dengan baris berisi jumlah data suara yang terbaca, diikuti baris yang berisi berapa banyak suara yang valid. Kemudian tercetak calon nomor berapa saja yang menjadi pasangan ketua RT dan RW
+> 
 > **-Code-**
+> 
 ```go
 package main
 import "fmt"
@@ -307,20 +337,27 @@ func main() {
 }
 ```
 >**-Output-**
+>
 >![](output/output2_umodul11.png)
+>
 >**-Penjelasan Program-**
+>
 >Program ini hampir sama dengan soal 1 dan ini adalah lajutannya. Pertama program akan meminta user untuk memasukkan suara berupa nomor calon ketua RT dan akan berhenti saat user memasukkan angka 0. Setiap suara yang valid yaitu 1 sampai 20 akan dicatat dan dihitung. Program akan memanggil "func sequentialSearch" untuk mengecek apakah calon sudah ada di dalam daftar, dan jika belum maka akan ditambahkan. Setelah semua suara diproses, program akan memanggil "func urutkanCalon" untuk mengurutkan daftar calon berdasarkan jumlah suara terbanyak dan nomor calon terkecil jika suara mereka sama. Kemudian program mencetak jumlah suara, suara sah, serta nomor calon yang menjadi Ketua dan Wakil Ketua RT berdasarkan hasil pungutan suara.
 
 ---
 
 
 **Soal 3**
+
 > Diberikan n data integer positif dalam keadaan terurut membesar dan sebuah integer lain k, apakah bilangan k tersebut ada dalam daftar bilangan yang diberikan? Jika ya, berikan indeksnya, jika tidak sebutkan "TIDAK ADA".
 > **Masukan :** terdiri dari dua baris. Baris pertama berisi dua buah integer positif, yaitu n dan k. n menyatakan banyaknya data, dimana 1 < n <= 1000000. k adalah bilangan yang ingin dicari. Baris kedua berisi n buah data integer positif yang sudah terurut membesar
 > **Keluaran :** terdiri dari satu baris saja, yaitu sebuah bilangan yang menyatakan posisi data yang dicari (k) dalam kumpulan data yang diberikan. Posisi data dihitung dimulai dari angka 0. Atau memberikan keluaran "TIDAK ADA" jika data k tersebut tidak ditemukan dalam kumpulan.
 > Program yang dibangun harus menggunakan subprogram dengan mengikuti kerangka yang sudah diberikan berikut ini.
+> 
 > ![](soal3_modul11.png)
+> 
 > **-Code-**
+> 
 ```go
 package main
 import "fmt"
@@ -371,8 +408,11 @@ func binarySearch(arr []int, n, x int) int {
 }
 ```
 >**-Output-**
+>
 >![](output/output3_umodul11.png)
+>
 >**-Penjelasan Program-**
+>
 >Program akan meminta user memasukkan dua buah nilai, yaitu jumlah data n dan bilangan yang ingin dicari yaitu k, kemudian dilanjutkan dengan memasukkan n denga data integer yang sudah terurut membesar jadi program hanya perlu menjalankan logika binary search. Setelah semua data dimasukkan, maka program akan memanggil "func binarySearch" yang bertugas untuk mencari apakah nilai k terdapat di dalam array. Jika nilai k ditemukan, maka program akan mengembalikan posisi indeks dari nilai tersebut. Namun jika nilai k tidak ada, maka program akan menampilkan "TIDAK ADA". 
 
 ---
