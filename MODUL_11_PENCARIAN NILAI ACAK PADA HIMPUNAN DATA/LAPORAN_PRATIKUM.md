@@ -359,7 +359,7 @@ func main() {
 > **Keluaran :** terdiri dari satu baris saja, yaitu sebuah bilangan yang menyatakan posisi data yang dicari (k) dalam kumpulan data yang diberikan. Posisi data dihitung dimulai dari angka 0. Atau memberikan keluaran "TIDAK ADA" jika data k tersebut tidak ditemukan dalam kumpulan.
 > Program yang dibangun harus menggunakan subprogram dengan mengikuti kerangka yang sudah diberikan berikut ini.
 > 
-> ![](soal3_modul11.png)
+>![](output/soal3_modul11.png)
 > 
 > **-Code-**
 > 
