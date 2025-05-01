@@ -7,6 +7,7 @@ Algoritma Selection Sort Pengurutan secara seleksi  adalah mencari nilai ekstrim
 3) Ulangi proses ini sampai tersisa hanya satu data saja.
 Pengurutan secara insertion adalah menyisipkan suatu nilai pada posisi yang seharusnya. Berbeda dengan pengurutan seleksi, yang mana pada pengurutan ini tidak dilakukan pencarian nilai ekstrim terlebih dahulu, cukup memilih suatu nilai tertentu kemudian mencari posisinya secara sequential search. Pada penjelasan berikut ini data akan diurut mengecil (descending), dan data dengan indeks kecil ada di "kiri" dan indeks besar ada di "kanan"
 <h1>Guided </h1>
+
 **Soal 1**
 >Diberikan `n` bilangan bulat positif. Buat program untuk mengurutkan angka ganjil secara **membesar (ascending)** dan angka genap secara **mengecil (descending)**, lalu gabungkan hasilnya dengan ganjil duluan.
 >Gunakan **selection sort** dalam proses pengurutan.
@@ -89,6 +90,7 @@ func main() {
 >![](output/output1_umodul12.png)
 >
 >**-Penjelasan Program-**
+>
 >Program ini dibuat untuk mengurutkan sejumlah bilangan bulat positif dengan aturan khusus, yaitu bilangan ganjil harus diurutkan secara membesar (ascending) dan bilangan genap diurutkan secara mengecil (descending), lalu keduanya digabung dengan bilangan ganjil ditempatkan lebih dulu. Program dimulai dengan membaca jumlah bilangan "n", kemudian membaca "n" buah bilangan dan menyimpannya dalam array. Setelah itu, setiap bilangan diperiksa, jika ganjil, dimasukkan ke dalam array "ganjil", jika genap dimasukkan ke array "genap". Kedua array tersebut lalu diurutkan menggunakan "selection sort", jika ganjil menggunakan versi naik (ascending), dan jika genap versi turun (descending). Lalu seluruh isi aray ganjil dicetak terlebih dahulu, dilanjutkan dengan array genap. 
 
 
@@ -152,6 +154,7 @@ func main() {
 >![](output/output2_umodul12.png)
 >
 >**-Penjelasan Program-**
+>
 > Program bertugas untuk mengurutkan nilai-nilai ujian siswa dari yang tertinggi ke yang terendah. Setiap siswa direpresentasikan dengan sebuah struct siswa yang memiliki dua field yaitu nim dan nilai. Data siswa sudah tersedia langsung di dalam program dalam bentuk array slice dari Siswa. Proses pengurutan dilakukan dengan membandingkan nilai antar siswa. 
 
 
@@ -162,7 +165,8 @@ func main() {
 
 ##### Selection Sort
 
- **Soal 1**
+
+**Soal 1**
 >Hercules, preman terkenal seantero ibukota, memiliki kerabat di banyak daerah. Tentunya Hercules sangat suka mengunjungi semua kerabatnya itu. Diberikan masukan nomor rumah dari semua kerabatnya di suatu daerah, buatlah program rumahkerabat yang akan menyusun nomor-nomor rumah kerabatnya secara terurut membesar menggunakan algoritma selection sort.
 >**Masukan:**
 >  dimulai dengan sebuah integer 𝒏 (0 < n < 1000), banyaknya daerah kerabat Hercules tinggal. Isi 𝒏 baris berikutnya selalu dimulai dengan sebuah integer 𝒎 (0 < m < 1000000) yang menyatakan banyaknya rumah kerabat di daerah tersebut, diikuti dengan rangkaian bilangan bulat positif, nomor rumah para kerabat.
@@ -306,7 +310,7 @@ func main() {
 >
 >Program diawali dengan input jumlah daerah n. Untuk setiap daerah, user akan memasukkan jumlah rumah m, diikuti oleh m buah nomor rumah. Program kemudian memisahkan nomor rumah ke dalam dua array berbeda:
 > - ganjil untuk nomor rumah yang ganjil (angka % 2 == 1)
-> - genap untuk nomor rumah yang genap (angka % 2 == 0)
+
 >Masing-masing array diurutkan dengan fungsi selectionSort, di mana ganjil diurutkan secara membesar (ascending), dan `genap` diurutkan membesar lalu dicetak dari belakang agar hasil akhirnya menurun (descending). Output yang dihasilkan berupa satu baris per daerah yang menampilkan nomor rumah ganjil yang telah diurutkan diikuti oleh nomor rumah genap yang juga telah diurutkan terbalik.
 
 
@@ -483,16 +487,21 @@ func main() {
 >Program akan terus meminta input bilangan bulat dari user hingga ditemukan angka negatif. Semua angka yang tidak negatif akan disimpan dalam "data". Setelah itu, array "data" akan diurutkan secara menurun (descending) menggunakan algoritma "insertionSort", yaitu algoritma yang menyisipkan elemen ke dalam bagian array yang sudah terurut. Setelah pengurutan selesai, program mengeluarkan isi array yang telah diurutkan. Kemudian, program menghitung selisih jarak antara elemen pertama dan kedua sebagai patokan, lalu membandingkan selisih ini dengan selisih antara pasangan elemen-elemen berikutnya Jika semua selisih tersebut sama, maka akan ditampilkan Data berjarak sebanyak jaraknya tersebut. Jika tidak maka program mencetak "Data berjarak tidak tetap".
 
 
+---
 
 
 **Soal 2**
 >Sebuah program perpustakaan digunakan untuk mengelola data buku di dalam suatu perpustakaan. Misalnya terdefinisi struct dan array seperti berikut ini
+>
 >![](output/soal5_gmodul12.png)
+
 >**Masukan:**
 >  terdiri dari beberapa baris. Baris pertama adalah bilangan bulat N yang menyatakan banyaknya data buku yang ada di dalam perpustakaan. N baris berikutnya, masing-masingnya adalah data buku sesuai dengan atribut atau field pada struct. Baris terakhir adalah bilangan bulat yang menyatakan rating buku yang akan dicari.
 >  **Keluaran:**
 >  terdiri dari beberapa baris. Baris pertama adalah data buku terfavorit, baris kedua adalah lima judul buku dengan rating tertinggi, selanjutnya baris terakhir adalah data buku yang dicari sesuai rating yang diberikan pada masukan baris terakhir.
->  Lengkapi subprogram-subprogram dibawah ini, sesuai dengan I.S. dan F.S yang diberikan.>![](output/soal5-1_gmodul12.png)
+>  Lengkapi subprogram-subprogram dibawah ini, sesuai dengan I.S. dan F.S yang diberikan.
+>
+>>![](output/soal5-1_gmodul12.png)
 
 >**-Code-**
 ```go
