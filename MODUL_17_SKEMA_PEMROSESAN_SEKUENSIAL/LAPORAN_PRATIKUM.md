@@ -383,4 +383,4 @@ func main() {
 >
 >**-Penjelasan Program-**
 >
->Program mengestimasi nilai π dengan menyimulasikan penaburan topping secara acak pada bidang persegi berukuran 1x1 yang memuat sebuah pizza bundar dengan pusat di (0.5, 0.5) dan jari-jari 0.5. Setiap titik topping "(x, y)" dicek apakah berada di dalam lingkaran dengan menggunakan rumus jarak dari pusat, dan jika berada di dalam, dihitung sebagai topping di atas pizza. Rasio antara jumlah topping yang berada di dalam lingkaran dengan total topping dikalikan 4 digunakan untuk menghitung estimasi nilai π.
+>Program mengestimasi nilai π dengan menyimulasikan penaburan topping secara acak pada bidang memuat sebuah pizza bundar dengan pusat di (0.5, 0.5) dan jari-jari 0.5. Setiap titik topping "(x, y)" dicek apakah berada di dalam lingkaran dengan menggunakan rumus jarak dari pusat, dan jika berada di dalam, dihitung sebagai topping di atas pizza. Rasio antara jumlah topping yang berada di dalam lingkaran dengan total topping dikalikan 4 digunakan untuk menghitung estimasi nilai π.
