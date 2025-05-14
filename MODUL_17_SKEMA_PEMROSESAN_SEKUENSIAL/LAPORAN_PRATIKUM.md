@@ -3,10 +3,12 @@ SKEMA PEMROSESAN SEKUENSIAL</b></h1><p align = center><b>Nama : Alvin Aldino Rah
 <h1>Dasar Teori</h1>
 Pengantar Skema Pemrosesan Sekuensial yang dipersenjatai bentuk perulangan dan bentuk percabangan, banyak problem komputasi yang dapat diselesaikan. Dengan cara ini data dapat dibaca, dianalisis, dan diproses secara bertahap sesuai urutan kemunculannya. 
 <h1>Guided </h1>
+
 **Soal 1**
 >Aldi memiliki daftar nilai ulangan matematika temannya: 75, 60, 90, 85, dan 70. Ia ingin mengurutkan nilai tersebut dari yang terkecil ke yang terbesar menggunakan **metode Bubble Sort**.
 >
 >**-Code-**
+
 ```go
 package main
 import "fmt"
@@ -87,10 +89,15 @@ func main() {
 
 **Soal 2**
 >Diberikan string x dan n buah string. x adalah data pertama yang dibaca, n adalah data bilangan yang dibaca kedua, dan n data berikutnya adalah data string. Buat algoritma untuk menjawab pertanyaan berikut:
->a. Apakah string x ada dalam kumpulan n data string tersebut? 
->b. Pada posisi ke berapa string x tersebut ditemukan? 
->c. Ada berapakah string x dalam kumpulan n data string tersebut? 
+>
+>a. Apakah string x ada dalam kumpulan n data string tersebut?
+>
+>b. Pada posisi ke berapa string x tersebut ditemukan?
+>
+>c. Ada berapakah string x dalam kumpulan n data string tersebut?
+>
 >d. Adakah sedikitnya dua string x dalam n data string tersebut?
+>
 >
 >**-Code-**
 ```go
@@ -164,6 +171,7 @@ func main() {
 **Soal 3**
 >Empat daerah A, B, C, dan D yang berdekatan ingin mengukur curah hujan. Keempat daerah tersebut digambarkan pada 4 buah bidang.
 >Misal curah hujan dihitung berdasarkan banyaknya tetesan air hujan. Setiap tetesan berukuran 0.0001 ml curah hujan. Tetesan air hujan turun secara acak dari titik (0,0) sampai (1,1). Jika diterima input yang menyatakan banyaknya tetesan air hujan. Tentukan curah hujan untuk keempat daerah tersebut. Buatlah program yang menerima input berupa banyaknya tetesan air hujan. Kemudian buat koordinat/titik (x, y) secara acak dengan menggunakan fungsi rand.Float64(). Hitung dan tampilkan banyaknya tetesan yang jatuh pada daerah A, B, C dan D. Konversikan satu tetesan berukuran 0.0001 milimeter
+>
 >**Catatan :** Lihat lampiran untuk informasi menggunakan paket math/rand untuk menggunakan rand.Float64() yang menghasilkan bilangan riil acak [0..1] 
 >
 >**-Code-**
@@ -224,9 +232,11 @@ func main() {
 
 **Soal 4**
 >Berdasarkan formula Leibniz, nilai π dapat dinyatakan sebagai deret harmonik ganti sebagai berikut:
+>
 $$
 1 − 1/3 + 1/5 − 1/7 + 1/9 − ⋯ = 𝜋/4
 $$
+
 >Suku ke-i dinyatakan sebagai 𝑆𝑖 dan jumlah deret adalah 𝑆. Apabila diketahui suku pertama 𝑆1 = 1, suku kedua 𝑆2 = −1/3 . Temukan rumus untuk suku ke-𝒊 atau 𝑆𝑖 . Berdasarkan rumus tersebut, buatlah program yang menghitung 𝑆 untuk 1000000 suku pertama
 >Perhatikan contoh sesi interaksi program di bawah ini (teks cetak miring  adalah input/read):
 >
