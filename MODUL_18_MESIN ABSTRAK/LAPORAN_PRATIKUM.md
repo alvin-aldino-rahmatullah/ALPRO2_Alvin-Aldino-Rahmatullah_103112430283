@@ -528,7 +528,7 @@ func main() {
 >
 >**-Penjelasan Program-**
 >
->Program ini seperti sebuah untuaian karakter yang di input user . Untaian karakter tersebut dianalisis secara satu per satu dengan menggunakan struktur  "MesinKarakter", yang menyimpan teks input, posisi karakter saat ini, dan karakter yang sedang dibaca. Program dimulai dengan memanggil prosedur "start", lalu membaca karakter satu per satu dengan "maju", dan terus berjalan selama belum mencapai tanda akhir titik (`.`) yang berfungsi sebagai penanda akhir (EOP). Selama pembacaan, program mencatat jumlah seluruh karakter yang terbaca, menghitung berapa banyak kemunculan  'A' dan "LE". Setelah proses selesai, program menghitung frekuensi huruf 'A' terhadap total karakter.
+>Program ini seperti sebuah untuaian karakter yang di input user . Untaian karakter tersebut dianalisis secara satu per satu dengan menggunakan struktur  "MesinKarakter", yang menyimpan teks input, posisi karakter saat ini, dan karakter yang sedang dibaca. Program dimulai dengan memanggil prosedur "start", lalu membaca karakter satu per satu dengan "maju", dan terus berjalan selama belum mencapai tanda akhir titik (`.`) yang berfungsi sebagai penanda akhir. Selama pembacaan, program mencatat jumlah seluruh karakter yang terbaca, menghitung berapa banyak kemunculan  'A' dan "LE". Setelah proses selesai, program menghitung frekuensi huruf 'A' terhadap total karakter.
 
 
 
