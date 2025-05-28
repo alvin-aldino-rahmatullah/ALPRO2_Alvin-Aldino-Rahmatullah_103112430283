@@ -4,18 +4,29 @@ SKEMA PEMROSESAN SEKUENSIAL</b></h1><p align = center><b>Nama : Alvin Aldino Rah
 <h1>Dasar Teori</h1>
 Model komputasi terdiri dari data yang dapat diolah dan operasi-operasi dasar pengolahan data tersebut. Mesin abstrak adalah model komputasi yang dirancang di atas model mesin komputasi yang telah ada, yaitu tipe data dan operasi-operasi dasarnya dibuat menggunakan tipe data dan operasi-operasi yang tersedia di mesin di bawahnya. Contoh penerapannya ada pada domino yang kartunya memiliki dua sisi bernilai 0 sampai 6 dan memiliki sistem mengocok, mengambil, dan mengevaluasi kartu, termasuk mencari kartu yang cocok dan memeriksa pasangan kartu.
 <h1>Unguided </h1>
+
 **Soal 1**
+
 > Implementasi operasi dasar mesin domino sebagai sebuah subprogram: 
 > a. Buat tipe data kartu domino (Domino) yang menyimpan informasi 
+>>
 >>➢ gambar (suit) kedua sisi kartu 
+>>
 >>➢ nilai kartu 
+>>
 >>➢ Boolean data yang menyatakan kartu ini balak atau bukan 
+>>
 >>➢ Buat tipe data satu set kartu domino (Dominoes) 
+>>
 >>➢ Array menyimpan 28 kartu Domino 
+>>
 >>➢ Jumlah kartu tersisa dalam array tersebut 
->b. prosedur kocokKartu(Dominoes) 
->c. fungsi ambilKartu(Dominoes) → Domino 
->d. fungsi gambarKartu(Domino,suit int) → int e) fungsi nilaiKartu(Domino) → int
+>
+> b. prosedur kocokKartu(Dominoes) 
+>
+> c. fungsi ambilKartu(Dominoes) → Domino 
+>
+> d. fungsi gambarKartu(Domino,suit int) → int e) fungsi nilaiKartu(Domino) → int
 >
 >**-Code-**
 
@@ -123,7 +134,9 @@ func main() {
 
 **Soal 2**
 > Realisasi aksi berikut menggunakan operasi-operasi dasar mesin domino: 
+>
 > a. prosedur galiKartu(Dominoes,Domino) yang mengambil kartu dari tumpukan sampai diperoleh kartu dengan gambar (suit) yang sama dengan kartu yang diberikan 
+>
 > b. fungsi sepasangKartu(Domino,Domino) → boolean; yang memberikan nilai true jika total nilai kartu adalah 12 dan false jika tidak
 
 >**-Code-**
@@ -411,14 +424,22 @@ func main() {
 > Implementasi mesin abstrak karakter yang bekerja terhadap untaian karakter (yang diakhiri dengan penanda titik (".") dan mempunyai sejumlah operasi dasar. 
 > a. Operasi dasar mesin karakter: 
 > >➢ Prosedur start(); yang menyiapkan mesin karakter di awal rangkaian karakter. 
+> >
 > >➢ Prosedur maju(); yang memajukan pembaca ke posisi karakter berikutnya. 
+> >
 > >➢ Fungsi eop(); yang mengembalikan nilai true apabila sudah mencapai akhir rangkaian, sampai ke penanda titik ("."). 
+> >
 > >➢ Fungsi cc(); yang mengembalikan karakter yang sedang terbaca, atau berada pada posisi pembacaan mesin. 
+> 
 > b. Dengan operasi dasar di atas buat algoritma untuk: 
 > >➢ Membaca seluruh karakter yang diberikan ke mesin karakter tersebut. 
+> >
 > >➢ Menghitung berapa banyak karakter yang terbaca. 
+> >
 > >➢ Menghitung ada berapa huruf "A" yang terbaca. 
+> >
 > >➢ Menghitung frekuensi kemunculan huruf "A" terhadap seluruh karakter terbaca. 
+> >
 > >➢ Menghitung ada berapa kata "LE" (pasangan berturutan huruf "L" dan "E") yang terbaca.
 
 >**-Code-**
@@ -506,6 +527,7 @@ func main() {
 >![](output/output4_umodul18.png)
 >
 >**-Penjelasan Program-**
+>
 >Program ini seperti sebuah untuaian karakter yang di input user . Untaian karakter tersebut dianalisis secara satu per satu dengan menggunakan struktur  "MesinKarakter", yang menyimpan teks input, posisi karakter saat ini, dan karakter yang sedang dibaca. Program dimulai dengan memanggil prosedur "start", lalu membaca karakter satu per satu dengan "maju", dan terus berjalan selama belum mencapai tanda akhir titik (`.`) yang berfungsi sebagai penanda akhir (EOP). Selama pembacaan, program mencatat jumlah seluruh karakter yang terbaca, menghitung berapa banyak kemunculan  'A' dan "LE". Setelah proses selesai, program menghitung frekuensi huruf 'A' terhadap total karakter.
 
 
